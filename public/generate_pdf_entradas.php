@@ -31,15 +31,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <h2>Reporte de Entradas</h2>
     <form method="post" action="generate_pdf_entradas.php">
         <div class="form-group">
-            <label for="fecha_salida">Fecha de Salida:</label>
-            <input type="date" class="form-control" id="fecha_salida" name="fecha_salida" required>
+            <label for="fecha_ingreso">Fecha de Salida:</label>
+            <input type="date" class="form-control" id="fecha_ingreso" name="fecha_ingreso" required>
         </div>
         <div class="form-group">
-            <label for="fecha_ingreso">Fecha de Ingreso:</label>
-            <input type="date" class="form-control" id="fecha_ingreso" name="fecha_ingreso" required>
+            <label for="fecha_salida">Fecha de Ingreso:</label>
+            <input type="date" class="form-control" id="fecha_salida" name="fecha_salida" required>
         </div>
         <button type="submit" class="btn btn-primary">Buscar</button>
     </form>
+
 
     <?php if (isset($result)): ?>
         <table class="table mt-3">
@@ -63,9 +64,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <td><?php echo $row['Usuario']; ?></td>
                         <td><?php echo $row['telefono']; ?></td>
                         <td><?php echo $row['email']; ?></td>
-                        <td><?php echo $row['FechaSalida']; ?></td>
-                        <td><?php echo $row['Cantidad']; ?></td>
                         <td><?php echo $row['FechaIngreso']; ?></td>
+                        <td><?php echo $row['Cantidad']; ?></td>
+                        <td><?php echo $row['FechaSalida']; ?></td>
                     </tr>
                 <?php endwhile; ?>
             </tbody>

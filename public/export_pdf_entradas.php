@@ -1,5 +1,5 @@
 <?php
-require_once('../libs/tcpdf-main/tcpdf.php');
+require_once('../libs/tcpdf/tcpdf.php');
 include '../includes/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
