@@ -1,0 +1,16 @@
+.sidebar {
+    height: 100vh; /* Altura completa de la ventana */
+    overflow-y: auto; /* Hacer que sea desplazable */
+    overflow-x: hidden; /* Ocultar desplazamiento horizontal si lo hay */
+    background-color: #343a40; /* Color de fondo del menú */
+    padding-top: 20px; /* Espacio en la parte superior */
+}
+
+.sidebar .nav-list {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+    padding: 10px;
+}

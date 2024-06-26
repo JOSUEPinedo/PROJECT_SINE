@@ -1,0 +1,54 @@
+/* Asegúrate de que estos estilos no están causando la duplicación */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #343a40;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-list li {
+    padding: 10px 20px;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-list li a:hover {
+    background: #495057;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+

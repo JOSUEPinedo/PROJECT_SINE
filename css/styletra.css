@@ -1,0 +1,75 @@
+.sidebar {
+    width: 250px; /* Ajusta según tus necesidades */
+    background-color: #333;
+    color: white;
+    height: 100vh; /* O la altura que desees */
+    padding: 20px;
+}
+
+.sidebar .btn {
+    display: block; /* Hace que los botones ocupen toda la línea */
+    width: 100%; /* Hace que los botones se extiendan a todo el ancho de la barra lateral */
+    margin-bottom: 10px; /* Espacio entre botones */
+}
+.profile {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-action {
+    width: 100%; /* Hace que cada botón ocupe todo el ancho de su contenedor */
+    margin: 2px 0; /* Agrega un pequeño margen entre los botones */
+}
+
+.table td {
+    vertical-align: middle; /* Alinea el contenido de la celda verticalmente */
+}
+.sidebar .btn-sidebar {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    font-size: 14px; /* Ajusta el tamaño de la fuente según necesites */
+    border: none;
+    background: none;
+    text-align: left;
+    width: 100%;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .btn-sidebar i {
+    min-width: 25px; /* Asegura que los íconos tengan espacio suficiente */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.sidebar .btn-sidebar:hover {
+    background-color: #444; /* Cambia el color de fondo al pasar el mouse */
+    cursor: pointer;
+}
+
+.sidebar .btn-sidebar:focus {
+    outline: none;
+}
