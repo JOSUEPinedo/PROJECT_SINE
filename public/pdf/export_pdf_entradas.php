@@ -1,7 +1,6 @@
 <?php
-require_once('../libs/tcpdf/tcpdf.php');
-include '../includes/db.php';
-
+require_once('../../libs/tcpdf-main/tcpdf.php');
+include '../../includes/db.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fechaSalida = $_POST["fecha_salida"];
     $fechaIngreso = $_POST["fecha_ingreso"];
@@ -21,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pdf->SetCreator(PDF_CREATOR);
     $pdf->SetAuthor('Tu Nombre');
     $pdf->SetTitle('Entradas');
-    $pdf->SetHeaderData('', 0, 'Reporte de Entradas', '');
+    $pdf->SetHeaderData('', 0, 'Reporte de Prestamos', '');
     $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));
     $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));
     $pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
@@ -29,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $pdf->SetFont('helvetica', '', 12);
     $pdf->AddPage();
 
-    $html = '<h1>Reporte de Entradas</h1>';
+    $html = '<h1>Reporte de Prestamos</h1>';
     $html .= '<table border="1" cellpadding="5">
                 <thead>
                     <tr>
@@ -61,6 +60,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $html .= '</tbody></table>';
 
     $pdf->writeHTML($html, true, false, true, false, '');
-    $pdf->Output('reporte_entradas.pdf', 'D');
+    $pdf->Output('Reporte de Prestamos.pdf', 'D');
 }
 ?>

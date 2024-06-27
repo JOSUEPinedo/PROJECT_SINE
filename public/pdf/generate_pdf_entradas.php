@@ -1,5 +1,5 @@
 <?php
-include '../includes/db.php';
+include '../../includes/db.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fechaSalida = $_POST["fecha_salida"];
@@ -23,12 +23,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Generar PDF Entradas</title>
+    <title>Generar PDF Prestamos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container mt-5">
-    <h2>Reporte de Entradas</h2>
+    <h2>Reporte de Prestamos</h2>
     <form method="post" action="generate_pdf_entradas.php">
         <div class="form-group">
             <label for="fecha_ingreso">Fecha de Salida:</label>

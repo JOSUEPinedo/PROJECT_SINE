@@ -1,5 +1,5 @@
 <?php
-include '../includes/db.php';
+include '../../includes/db.php';
 
 $id = $_GET['id'];
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
